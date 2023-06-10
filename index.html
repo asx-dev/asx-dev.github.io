@@ -5,65 +5,115 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
   <!-- CSS -->
   <link rel="stylesheet" href="./dist/output.css">
-  <title>Vite App</title>
+  <title>ASX</title>
 </head>
 
 <body>
   <!-- Nav -->
   <header>
     <nav class="dark:bg-gray-800">
-      <div class="container mx-auto flex justify-between items-center py-4 font-sans">
+      <div class="container mx-auto flex justify-between items-center py-3 px-8">
         <!-- Logo -->
         <div class="">
-          <h3 class="text-xl font-medium dark:text-white">ASX</h3>
+          <h3 class="text-2xl font-extrabold dark:text-white">ASX</h3>
         </div>
         <!-- Nav Links -->
-        <ul class="flex gap-8">
-          <li>
+        <ul class="hidden md:flex gap-8">
+          <li class="duration-500 hover:scale-110">
             <a class="text-base font-medium text-gray-500 dark:text-gray-300" href="">Projects</a>
           </li>
-          <li>
+          <li class="duration-500 hover:scale-110">
             <a class="text-base font-medium text-gray-500 dark:text-gray-300" href="">Skills</a>
           </li>
-          <li>
+          <li class="duration-500 hover:scale-110">
             <a class="text-base font-medium text-gray-500 dark:text-gray-300" href="">Resume</a>
           </li>
         </ul>
         <!-- Send Email -->
-        <button class="bg-blue-700 py-2 px-5 rounded-md text-base text-white font-medium cursor-pointer shadow-lg">
-          Message
+        <button
+          class="bg-white py-1.5 px-5 rounded-md text-base text-black font-medium cursor-pointer shadow-lg flex justify-center items-center gap-2 duration-500 hover:scale-110 border border-y-gray-300">
+          <i class="ri-send-plane-fill text-2xl"></i>
+          <p class="text-base">Message</p>
         </button>
       </div>
     </nav>
   </header>
   <!-- Hero Section -->
-  <section class="dark:bg-gray-800 dark:text-white">
-    <div class="container mx-auto py-8 flex justify-center items-center">
+  <section class="dark:bg-gray-900 dark:text-white">
+    <div class="container mx-auto py-8 md:flex justify-center items-center px-4 space-y-5">
       <!-- Content -->
-      <div class="space-y-5">
+      <div class="space-y-5 text-center md:text-start">
         <h1 class="text-4xl lg:text-6xl font-extrabold">👋 Hi, I'm ASX <br> a mobile engineer</h1>
-        <p class="text-base lg:text-lg font-light text-gray-300">From checkout to global sales tax compliance, companies
+        <p class="text-base lg:text-lg font-light text-gray-500 dark:text-gray-300">From checkout to global sales tax
+          compliance, companies
           around the
           world use
           Flowbite to
           simplify their
           payment stack.</p>
         <!-- Buttons -->
-        <div>
-
+        <h3 class="text-2xl font-extrabold">What type of app do you want to create?</h3>
+        <div class="flex justify-center md:justify-normal gap-4">
+          <button
+            class="bg-white py-1.5 px-5 rounded-md text-base text-black font-medium cursor-pointer shadow-lg duration-500 hover:scale-110 flex justify-center items-center gap-2 border border-gray-300">
+            <i class="ri-apple-fill text-2xl"></i>
+            <p class="text-base">IOS</p>
+          </button>
+          <button
+            class="bg-white py-1.5 px-5 rounded-md text-base text-black font-medium cursor-pointer shadow-lg duration-500 hover:scale-110 flex justify-center items-center gap-2 border border-gray-300">
+            <i class="ri-android-fill"></i>
+            <p class="text-base">Android</p>
+          </button>
         </div>
-        <button class="bg-blue-700 py-2 px-5 rounded-md text-base text-white font-medium cursor-pointer shadow-lg">
-          IOS
-        </button>
-        <button class="bg-blue-700 py-2 px-5 rounded-md text-base text-white font-medium cursor-pointer shadow-lg">
-          Android
-        </button>
       </div>
       <!-- Image -->
       <div>
         <img src="./img/Downloads-Angle.png" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- Skills -->
+  <section class="dark:bg-gray-900 dark:text-white">
+    <div class="container mx-auto py-8 px-4">
+      <h2 class="text-4xl lg:text-5xl font-extrabold text-center mb-12">These are my main skills</h2>
+      <div class="grid grid-cols-4 gap-6">
+        <div class="flex flex-col justify-center items-center duration-500 hover:scale-110 cursor-pointer gap-2">
+          <h3 class="text-2xl font-extrabold">HTML5</h3>
+          <i class="ri-html5-fill text-8xl border border-gray-300 shadow-lg p-6 rounded-full"></i>
+        </div>
+        <div class="flex flex-col justify-center items-center duration-500 hover:scale-110 cursor-pointer gap-2">
+          <h3 class="text-2xl font-extrabold">JavaScript</h3>
+          <i class="ri-javascript-fill text-8xl border border-gray-300 shadow-lg p-6 rounded-full "></i>
+        </div>
+
+        <div class="flex flex-col justify-center items-center duration-500 hover:scale-110 cursor-pointer gap-2">
+          <h3 class="text-2xl font-extrabold">Node JS</h3>
+          <i class="devicon-nodejs-plain  text-8xl border border-gray-300 shadow-lg p-6 rounded-full text-white"></i>
+        </div>
+
+        <div class="flex flex-col justify-center items-center duration-500 hover:scale-110 cursor-pointer gap-2">
+          <h3 class="text-2xl font-extrabold">CSS3</h3>
+          <i class="ri-css3-fill text-8xl border border-gray-300 shadow-lg p-6 rounded-full"></i>
+        </div>
+
+        <div class="flex flex-col justify-center items-center duration-500 hover:scale-110 cursor-pointer gap-2">
+          <h3 class="text-2xl font-extrabold">Tailwind CSS</h3>
+          <i class="devicon-tailwindcss-plain  text-8xl border border-gray-300 shadow-lg p-6 rounded-full"></i>
+        </div>
+
+        <div class="flex flex-col justify-center items-center duration-500 hover:scale-110 cursor-pointer gap-2">
+          <h3 class="text-2xl font-extrabold">Git</h3>
+          <i class="devicon-git-plain  text-8xl border border-gray-300 shadow-lg p-6 rounded-full"></i>
+        </div>
+        <div class="flex flex-col justify-center items-center duration-500 hover:scale-110 cursor-pointer gap-2">
+          <h3 class="text-2xl font-extrabold">Github</h3>
+          <i class="ri-github-fill text-8xl border border-gray-300 shadow-lg p-6 rounded-full"></i>
+        </div>
       </div>
     </div>
   </section>
