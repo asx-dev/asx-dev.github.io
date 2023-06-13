@@ -685,6 +685,10 @@ video {
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -902,6 +906,10 @@ video {
 }
 
 @media (prefers-color-scheme: dark) {
+  .dark\:bg-gray-600\/30 {
+    background-color: rgb(75 85 99 / 0.3);
+  }
+
   .dark\:bg-gray-800 {
     --tw-bg-opacity: 1;
     background-color: rgb(31 41 55 / var(--tw-bg-opacity));
@@ -910,14 +918,6 @@ video {
   .dark\:bg-gray-900 {
     --tw-bg-opacity: 1;
     background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-  }
-
-  .dark\:bg-gray-500\/30 {
-    background-color: rgb(107 114 128 / 0.3);
-  }
-
-  .dark\:bg-gray-600\/30 {
-    background-color: rgb(75 85 99 / 0.3);
   }
 
   .dark\:text-gray-300 {
