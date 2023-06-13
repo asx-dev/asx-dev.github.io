@@ -801,11 +801,6 @@ video {
   padding-bottom: 2rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .pt-8 {
   padding-top: 2rem;
 }
@@ -917,6 +912,14 @@ video {
     background-color: rgb(17 24 39 / var(--tw-bg-opacity));
   }
 
+  .dark\:bg-gray-500\/30 {
+    background-color: rgb(107 114 128 / 0.3);
+  }
+
+  .dark\:bg-gray-600\/30 {
+    background-color: rgb(75 85 99 / 0.3);
+  }
+
   .dark\:text-gray-300 {
     --tw-text-opacity: 1;
     color: rgb(209 213 219 / var(--tw-text-opacity));
@@ -975,11 +978,6 @@ video {
   .lg\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
-  }
-
-  .lg\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 
   .lg\:pt-16 {
