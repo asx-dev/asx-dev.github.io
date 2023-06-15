@@ -19,7 +19,8 @@ const resumeMobile = document.getElementById('resumeMobile')
 resumeBtn.addEventListener('click', downloadResume)
 resumeMobile.addEventListener('click', downloadResume)
 
-function downloadResume() {
+function downloadResume(event) {
+  event.preventDefault()
   let link = document.createElement('a')
   link.href = '../public/resume.pdf'
   link.download = 'asx-resume.pdf'
