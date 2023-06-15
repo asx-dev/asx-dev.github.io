@@ -34,7 +34,8 @@ const sr = ScrollReveal({
 })
 
 sr.reveal('.home__content', { delay: 600, origin: 'left' })
-sr.reveal('.skills__title', { delay: 700 })
-sr.reveal('.skills__icons', { origin: 'bottom', interval: 700 })
-sr.reveal('.project__content', { delay: 800, origin: 'left' })
-sr.reveal('.project__img', { delay: 800, origin: 'right' })
+sr.reveal('.home__img', { delay: 700, origin: 'bottom' })
+sr.reveal('.skills__title', { delay: 800 })
+sr.reveal('.skills__icons', { origin: 'bottom', interval: 900 })
+sr.reveal('.project__content', { delay: 900, origin: 'left' })
+sr.reveal('.project__img', { delay: 900, origin: 'right' })
