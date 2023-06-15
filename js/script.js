@@ -26,3 +26,15 @@ function downloadResume(event) {
   link.download = 'asx-resume.pdf'
   link.click()
 }
+
+const sr = ScrollReveal({
+  distance: '60px',
+  duration: 2500,
+  reset: true,
+})
+
+sr.reveal('.home__content', { delay: 600, origin: 'left' })
+sr.reveal('.skills__title', { delay: 700 })
+sr.reveal('.skills__icons', { origin: 'bottom', interval: 700 })
+sr.reveal('.project__content', { delay: 800, origin: 'left' })
+sr.reveal('.project__img', { delay: 800, origin: 'right' })
