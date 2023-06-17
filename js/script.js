@@ -30,12 +30,14 @@ function downloadResume(event) {
 const sr = ScrollReveal({
   distance: '60px',
   duration: 2500,
+  delay: 400,
   reset: true,
 })
 
 sr.reveal('.home__content', { delay: 600, origin: 'left' })
-sr.reveal('.home__img', { delay: 700, origin: 'bottom' })
-sr.reveal('.skills__title', { delay: 800 })
-sr.reveal('.skills__icons', { origin: 'bottom', interval: 900 })
-sr.reveal('.project__content', { delay: 900, origin: 'left' })
-sr.reveal('.project__img', { delay: 900, origin: 'right' })
+sr.reveal('.home__img', { delay: 600, origin: 'bottom' })
+sr.reveal('.skills__title', { delay: 700 })
+sr.reveal('.skills__icons', { origin: 'bottom', interval: 400, delay: 700 })
+sr.reveal('.projects__title')
+sr.reveal('.project__content', { origin: 'left' })
+sr.reveal('.project__img', { origin: 'right' })
