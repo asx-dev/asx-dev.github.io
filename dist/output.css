@@ -556,10 +556,6 @@ video {
   }
 }
 
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
 }
@@ -590,6 +586,10 @@ video {
 
 .top-3 {
   top: 0.75rem;
+}
+
+.z-30 {
+  z-index: 30;
 }
 
 .z-50 {
@@ -715,10 +715,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-}
-
-.overflow-x-hidden {
-  overflow-x: hidden;
 }
 
 .scroll-smooth {
