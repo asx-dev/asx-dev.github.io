@@ -15,11 +15,11 @@
   <title>ASX</title>
 </head>
 
-<body class="">
+<body class="overflow-x-hidden">
   <!-- Nav -->
   <header class="sticky top-0 z-30 backdrop-blur-md bg-gray-300/30">
     <nav class="dark:bg-gray-800 shadow-lg">
-      <div class="container mx-auto flex justify-between items-center py-3 px-8 relative">
+      <div class="container mx-auto flex justify-between items-center py-3 px-8">
         <!-- Logo -->
         <div class="">
           <h3
@@ -61,24 +61,27 @@
         </button>
         <!-- Mobile Menu Navbar -->
         <div id="mobile__nav"
-          class="hidden absolute top-0 right-0 left-0 py-12 backdrop-blur-md bg-gray-300/30 dark:bg-gray-600/30 duration-500 z-50">
+          class="hidden fixed top-0 left-0 py-12 w-full bg-white dark:bg-gray-800 duration-500 z-50">
           <ul class="flex flex-col gap-3">
             <!-- Close Button -->
             <i class="ri-close-line text-4xl absolute top-3 right-12 dark:text-white" id="close__button"></i>
             <li class="duration-500 hover:scale-110 flex justify-center items-center gap-2">
-              <a class="flex items-center gap-2 text-base font-medium text-gray-500 dark:text-white" href="#skills">
+              <a class="flex items-center gap-2 text-base font-medium text-gray-500 dark:text-white mobile__link"
+                href="#skills">
                 <i class="ri-macbook-line text-2xl dark:text-white"></i>
                 Skills
               </a>
             </li>
             <li class="duration-500 hover:scale-110 flex justify-center items-center gap-2">
-              <a class="flex items-center gap-2 text-base font-medium text-gray-500 dark:text-white" href="#projects">
+              <a class="flex items-center gap-2 text-base font-medium text-gray-500 dark:text-white mobile__link"
+                href="#projects">
                 <i class="ri-rocket-fill text-2xl dark:text-white"></i>
                 Projects
               </a>
             </li>
             <li class="duration-500 hover:scale-110 flex justify-center items-center gap-2" id="resumeMobile">
-              <a class="flex items-center gap-2 text-base font-medium text-gray-500 dark:text-white" href="">
+              <a class="flex items-center gap-2 text-base font-medium text-gray-500 dark:text-white mobile__link"
+                href="">
                 <i class="ri-file-user-line text-2xl dark:text-white"></i>
                 Resume
               </a>
@@ -138,7 +141,7 @@
         These are my main skills</h2>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         <div
-          class="flex flex-col justify-center items-center duration-500 hover:scale-110 cursor-pointer gap-2 skills__icons">
+          class="flex flex-col justify-center items-center duration-500 hover:scale-120 cursor-pointer gap-2 skills__icons">
           <h3 class="text-2xl font-bold">HTML5</h3>
           <i class="ri-html5-fill text-5xl md:text-6xl border border-gray-300 shadow-lg p-6 rounded-full"></i>
         </div>

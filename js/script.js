@@ -2,11 +2,11 @@
 const open = document.getElementById('menu__button')
 const nav = document.getElementById('mobile__nav')
 const close = document.getElementById('close__button')
-
+const links = document.querySelectorAll('.mobile__link')
 // Open and close menu
 open.addEventListener('click', toggleMobileMenu)
 close.addEventListener('click', toggleMobileMenu)
-
+links.forEach((link) => link.addEventListener('click', toggleMobileMenu))
 function toggleMobileMenu() {
   nav.classList.toggle('hidden')
 }
